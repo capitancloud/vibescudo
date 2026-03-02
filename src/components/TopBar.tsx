@@ -8,26 +8,21 @@ const resources = [
 
 const TopBar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] border-b border-cyan-accent/10 bg-[hsl(0_0%_2%)]/90 backdrop-blur-md">
-      <div className="mx-auto max-w-6xl flex items-center justify-between px-4 py-1.5">
-        <span className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground font-medium hidden sm:block">
-          Risorse gratuite
-        </span>
-        <div className="flex items-center gap-1 sm:gap-4 mx-auto sm:mx-0">
-          {resources.map((r) => (
-            <a
-              key={r.label}
-              href={r.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-medium text-cyan-accent/80 hover:text-cyan-accent hover:bg-cyan-accent/5 transition-colors"
-            >
-              <r.icon className="h-3 w-3" />
-              {r.label}
-              <ExternalLink className="h-2.5 w-2.5 opacity-40" />
-            </a>
-          ))}
-        </div>
+    <div className="fixed top-0 left-0 right-0 z-[60] border-b border-primary/20 bg-gradient-to-r from-primary/15 via-primary/10 to-primary/15 backdrop-blur-md">
+      <div className="mx-auto max-w-6xl flex items-center justify-center px-4 py-2 gap-2 sm:gap-6">
+        {resources.map((r, i) => (
+          <a
+            key={r.label}
+            href={r.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs sm:text-sm font-semibold text-primary hover:bg-primary/20 hover:border-primary/50 hover:shadow-[0_0_15px_hsl(0_72%_51%/0.3)] transition-all duration-300"
+          >
+            <r.icon className="h-3.5 w-3.5" />
+            {r.label}
+            <ExternalLink className="h-3 w-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+          </a>
+        ))}
       </div>
     </div>
   );
