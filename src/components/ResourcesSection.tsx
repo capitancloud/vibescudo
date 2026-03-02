@@ -37,7 +37,7 @@ const resources = [
     title: "Free Tools",
     subtitle: "Strumenti gratuiti di analisi",
     desc: "Una suite di strumenti gratuiti per analizzare la sicurezza del tuo sito: SSL checker, DNS security, email security, JWT decoder, hash generator e molto altro.",
-    href: "https://scanner.vibescudo.it/free-tools",
+    href: "https://tools.vibescudo.it/",
     cta: "Usa i free tools",
     highlights: ["SSL & DNS checker", "JWT decoder & hash generator", "100% gratuiti, nessun login"],
   },
