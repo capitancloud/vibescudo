@@ -20,7 +20,7 @@ const FAQSection = () => {
     },
     {
       q: "Perché costa €9,90?",
-      a: "Ogni scansione richiede risorse di calcolo significative per eseguire 21 controlli in tempo reale. Il prezzo copre i costi infrastrutturali mantenendo il servizio accessibile. Considerando che un penetration test professionale costa tra €5.000 e €50.000, €9,90 è un investimento minimo per la tranquillità.",
+      a: "Ogni scansione richiede risorse di calcolo significative per eseguire 21 controlli in tempo reale. Il prezzo copre i costi infrastrutturali mantenendo il servizio accessibile. Considerando che un penetration test professionale costa tra €1.500 e €10.000, €9,90 è un investimento minimo per la tranquillità.",
     },
     {
       q: "Devo essere il proprietario del sito?",
