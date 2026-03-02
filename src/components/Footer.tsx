@@ -26,7 +26,7 @@ const Footer = ({ scannerUrl }: FooterProps) => {
           </div>
 
           {/* Links */}
-          <div className="flex gap-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-16">
             <div>
               <h4 className="font-semibold text-sm mb-4 text-foreground">Prodotto</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
