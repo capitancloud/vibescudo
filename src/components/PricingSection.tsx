@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { Shield, Zap, Check } from "lucide-react";
 
-const PricingSection = () => {
+interface PricingProps {
+  scannerUrl: string;
+}
+
+const PricingSection = ({ scannerUrl }: PricingProps) => {
   return (
     <section className="px-4 py-20">
       <div className="mx-auto max-w-4xl">
@@ -48,10 +52,15 @@ const PricingSection = () => {
               </li>
             ))}
           </ul>
-          <button className="w-full rounded-xl bg-gradient-red py-4 text-lg font-semibold text-primary-foreground transition-all hover:opacity-90 flex items-center justify-center gap-2 glow-red-sm">
+          <a
+            href={scannerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full rounded-xl bg-gradient-red py-4 text-lg font-semibold text-primary-foreground transition-all hover:opacity-90 flex items-center justify-center gap-2 glow-red-sm"
+          >
             <Zap className="h-5 w-5" />
             Scansiona ora
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
