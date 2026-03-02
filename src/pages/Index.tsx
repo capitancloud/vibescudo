@@ -4,6 +4,7 @@ import SocialProof from "@/components/SocialProof";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorks from "@/components/HowItWorks";
 import SecurityAreas from "@/components/SecurityAreas";
+import ReportSection from "@/components/ReportSection";
 import TargetAudience from "@/components/TargetAudience";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
@@ -21,6 +22,7 @@ const Index = () => {
       <ProblemSection />
       <HowItWorks scannerUrl={SCANNER_URL} />
       <SecurityAreas />
+      <ReportSection scannerUrl={SCANNER_URL} />
       <TargetAudience />
       <PricingSection scannerUrl={SCANNER_URL} />
       <FAQSection />
