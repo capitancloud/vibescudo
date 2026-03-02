@@ -3,7 +3,7 @@ import { BookOpen, Code2, Wrench, ExternalLink } from "lucide-react";
 const resources = [
   { label: "Blog", href: "https://blog.vibescudo.it/", icon: BookOpen },
   { label: "Codice Sicuro", href: "https://codicesicuro.vibescudo.it/", icon: Code2 },
-  { label: "Free Tools", href: "https://scanner.vibescudo.it/free-tools", icon: Wrench },
+  { label: "Free Tools", href: "https://tools.vibescudo.it/", icon: Wrench },
 ];
 
 const TopBar = () => {
