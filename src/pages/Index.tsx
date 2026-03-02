@@ -7,6 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import SecurityAreas from "@/components/SecurityAreas";
 import ReportSection from "@/components/ReportSection";
 import TargetAudience from "@/components/TargetAudience";
+import ResourcesSection from "@/components/ResourcesSection";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -26,6 +27,7 @@ const Index = () => {
       <SecurityAreas />
       <ReportSection scannerUrl={SCANNER_URL} />
       <TargetAudience />
+      <ResourcesSection />
       <PricingSection scannerUrl={SCANNER_URL} />
       <FAQSection />
       <FinalCTA scannerUrl={SCANNER_URL} />
