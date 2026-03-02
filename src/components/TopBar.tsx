@@ -9,7 +9,7 @@ const resources = [
 const TopBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] border-b border-primary/20 bg-gradient-to-r from-primary/15 via-primary/10 to-primary/15 backdrop-blur-md">
-      <div className="mx-auto max-w-6xl flex items-center justify-center px-4 py-2 gap-2 sm:gap-4">
+      <div className="mx-auto max-w-6xl flex items-center justify-center px-4 py-2.5 gap-2 sm:gap-4">
         {/* Badge esortativo */}
         <span className="hidden lg:inline-flex items-center gap-1.5 rounded-full bg-primary/20 border border-primary/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary animate-pulse-slow mr-1">
           <Gift className="h-3 w-3" />
