@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SocialProof from "@/components/SocialProof";
 import ProblemSection from "@/components/ProblemSection";
+import RiskSection from "@/components/RiskSection";
 import HowItWorks from "@/components/HowItWorks";
 import SecurityAreas from "@/components/SecurityAreas";
 import ReportSection from "@/components/ReportSection";
@@ -20,6 +21,7 @@ const Index = () => {
       <HeroSection scannerUrl={SCANNER_URL} />
       <SocialProof />
       <ProblemSection />
+      <RiskSection />
       <HowItWorks scannerUrl={SCANNER_URL} />
       <SecurityAreas />
       <ReportSection scannerUrl={SCANNER_URL} />
