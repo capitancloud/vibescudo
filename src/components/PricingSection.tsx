@@ -70,7 +70,6 @@ const PricingSection = ({ scannerUrl }: PricingProps) => {
                 "Scansione 100% passiva e non invasiva",
                 "Nessun dato sensibile memorizzato",
                 "Nessun abbonamento — paghi solo quando vuoi",
-                "Supporto via email incluso",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm">
                   <Check className="h-5 w-5 shrink-0 text-success mt-0.5" />
