@@ -21,13 +21,13 @@ const Index = () => {
       <Navbar />
       <HeroSection scannerUrl={SCANNER_URL} />
       <SocialProof />
+      <ResourcesSection />
       <ProblemSection />
       <RiskSection />
       <HowItWorks scannerUrl={SCANNER_URL} />
       <SecurityAreas />
       <ReportSection scannerUrl={SCANNER_URL} />
       <TargetAudience />
-      <ResourcesSection />
       <PricingSection scannerUrl={SCANNER_URL} />
       <FAQSection />
       <FinalCTA scannerUrl={SCANNER_URL} />
