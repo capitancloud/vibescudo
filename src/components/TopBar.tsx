@@ -1,4 +1,4 @@
-import { BookOpen, Code2, Wrench, ExternalLink } from "lucide-react";
+import { BookOpen, Code2, Wrench, ExternalLink, Sparkles, Gift } from "lucide-react";
 
 const resources = [
   { label: "Blog", href: "https://blog.vibescudo.it/", icon: BookOpen },
@@ -9,8 +9,14 @@ const resources = [
 const TopBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] border-b border-primary/20 bg-gradient-to-r from-primary/15 via-primary/10 to-primary/15 backdrop-blur-md">
-      <div className="mx-auto max-w-6xl flex items-center justify-center px-4 py-2 gap-2 sm:gap-6">
-        {resources.map((r, i) => (
+      <div className="mx-auto max-w-6xl flex items-center justify-center px-4 py-2 gap-2 sm:gap-4">
+        {/* Badge esortativo */}
+        <span className="hidden lg:inline-flex items-center gap-1.5 rounded-full bg-primary/20 border border-primary/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary animate-pulse-slow mr-1">
+          <Gift className="h-3 w-3" />
+          Gratis per te
+        </span>
+
+        {resources.map((r) => (
           <a
             key={r.label}
             href={r.href}
@@ -23,6 +29,12 @@ const TopBar = () => {
             <ExternalLink className="h-3 w-3 opacity-50 group-hover:opacity-100 transition-opacity" />
           </a>
         ))}
+
+        {/* Freccia lampeggiante */}
+        <span className="hidden sm:inline-flex items-center gap-1 text-[11px] text-primary/70 font-medium animate-pulse">
+          <Sparkles className="h-3 w-3" />
+          Esplora!
+        </span>
       </div>
     </div>
   );
