@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
-import { Shield, Zap } from "lucide-react";
+import { Shield, Zap, ArrowRight } from "lucide-react";
 
-const HeroSection = () => {
+interface HeroProps {
+  scannerUrl: string;
+}
+
+const HeroSection = ({ scannerUrl }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-16 overflow-hidden">
       {/* Background glow */}
@@ -88,34 +92,31 @@ const HeroSection = () => {
         ))}
       </motion.div>
 
-      {/* CTA */}
+      {/* CTA buttons */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.65 }}
-        className="mt-8 flex flex-col items-center gap-4"
+        className="mt-10 flex flex-col sm:flex-row items-center gap-4"
       >
-        <button className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-6 py-3 text-sm text-muted-foreground hover:border-primary/40 transition-colors">
+        <a
+          href={scannerUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-xl bg-gradient-red px-8 py-4 text-lg font-semibold text-primary-foreground transition-all hover:opacity-90 glow-red-sm"
+        >
+          <Zap className="h-5 w-5" />
+          Scansiona ora — €9,90
+        </a>
+        <a
+          href={scannerUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary px-6 py-4 text-sm text-muted-foreground hover:border-primary/40 transition-colors"
+        >
           <Shield className="h-4 w-4" />
           Vedi un report di esempio
-        </button>
-      </motion.div>
-
-      {/* Login CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.75 }}
-        className="mt-10 w-full max-w-2xl"
-      >
-        <div className="flex items-center justify-center gap-3 rounded-xl border border-border bg-secondary/30 px-6 py-4 text-sm">
-          <span className="text-muted-foreground">→</span>
-          <span>
-            <span className="font-semibold text-primary">Accedi</span>{" "}
-            <span className="text-muted-foreground">per effettuare una scansione — ogni scansione costa</span>{" "}
-            <span className="font-bold text-foreground">€9,90</span>
-          </span>
-        </div>
+        </a>
       </motion.div>
     </section>
   );

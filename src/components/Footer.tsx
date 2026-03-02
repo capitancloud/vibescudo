@@ -1,6 +1,10 @@
 import { Shield } from "lucide-react";
 
-const Footer = () => {
+interface FooterProps {
+  scannerUrl: string;
+}
+
+const Footer = ({ scannerUrl }: FooterProps) => {
   return (
     <footer className="border-t border-border px-4 py-12">
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6">
