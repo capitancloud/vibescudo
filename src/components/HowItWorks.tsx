@@ -5,8 +5,8 @@ const steps = [
   {
     step: "01",
     icon: Search,
-    title: "Inserisci l'URL",
-    desc: "Copia e incolla l'indirizzo della tua web app. Non serve installare nulla, non serve accesso al codice. Se ha un URL pubblico, possiamo analizzarla.",
+    title: "Registrati e inserisci l'URL",
+    desc: "Crea un account in pochi secondi, poi copia e incolla l'indirizzo della tua web app. Non serve installare nulla, non serve accesso al codice. Se ha un URL pubblico, possiamo analizzarla.",
     detail: "Supportiamo qualsiasi sito pubblico: React, Next.js, Vue, Svelte, WordPress, custom e molto altro.",
   },
   {
@@ -19,9 +19,9 @@ const steps = [
   {
     step: "03",
     icon: FileText,
-    title: "Ricevi il report completo",
-    desc: "Un report dettagliato e comprensibile con ogni vulnerabilità trovata, il suo livello di rischio e consigli pratici per risolverla — anche se non sei un esperto.",
-    detail: "Il report è pensato per essere condiviso con il tuo sviluppatore o il tuo team.",
+    title: "Ricevi due report professionali",
+    desc: "Ricevi due documenti PDF: un report tecnico dettagliato con tutte le vulnerabilità trovate e i livelli di rischio, e un report di remediation generato da modelli AI avanzati con istruzioni step-by-step e codice pronto per risolvere ogni problema.",
+    detail: "Due report complementari: la diagnosi completa + il piano d'azione personalizzato. Perfetti da condividere con il tuo team.",
   },
 ];
 
