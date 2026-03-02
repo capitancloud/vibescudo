@@ -7,7 +7,7 @@ interface HeroProps {
 
 const HeroSection = ({ scannerUrl }: HeroProps) => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-28 pb-20 overflow-hidden noise-bg">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-32 sm:pt-28 pb-16 sm:pb-20 overflow-hidden noise-bg">
       {/* Animated background blobs */}
       <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[900px] h-[600px] rounded-full opacity-25 blur-[150px] bg-gradient-red pointer-events-none animate-pulse-slow" />
       <div className="absolute bottom-[-100px] right-[-200px] w-[400px] h-[400px] rounded-full opacity-10 blur-[100px] bg-gradient-red pointer-events-none" />
@@ -70,15 +70,15 @@ const HeroSection = ({ scannerUrl }: HeroProps) => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-10 flex items-center gap-5 rounded-2xl border border-border bg-card px-8 py-5"
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 rounded-2xl border border-border bg-card px-5 sm:px-8 py-4 sm:py-5"
         >
-          <span className="font-mono-bold text-5xl text-foreground">30<span className="text-primary text-3xl">s</span></span>
-          <div className="h-10 w-px bg-border" />
-          <div className="text-sm text-muted-foreground leading-snug">
+          <span className="font-mono-bold text-4xl sm:text-5xl text-foreground">30<span className="text-primary text-2xl sm:text-3xl">s</span></span>
+          <div className="hidden sm:block h-10 w-px bg-border" />
+          <div className="text-sm text-muted-foreground leading-snug text-center sm:text-left">
             <span className="font-semibold text-foreground text-base block">Per toglierti ogni dubbio</span>
             Nessuna installazione · Risultati immediati
           </div>
-          <Zap className="h-7 w-7 text-warning animate-float" />
+          <Zap className="h-7 w-7 text-warning animate-float hidden sm:block" />
         </motion.div>
 
         {/* CTA buttons */}
@@ -92,7 +92,7 @@ const HeroSection = ({ scannerUrl }: HeroProps) => {
             href={scannerUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 rounded-2xl bg-gradient-red px-10 py-5 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red"
+            className="group inline-flex items-center gap-2 sm:gap-3 rounded-2xl bg-gradient-red px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red text-center"
           >
             <Zap className="h-5 w-5" />
             Scopri le vulnerabilità — €9,90
