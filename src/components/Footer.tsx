@@ -1,4 +1,5 @@
 import { Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface FooterProps {
   scannerUrl: string;
@@ -38,16 +39,16 @@ const Footer = ({ scannerUrl }: FooterProps) => {
             <div>
               <h4 className="font-semibold text-sm mb-4 text-foreground">Legale</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Termini di Servizio</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Cookie Policy</a></li>
+                <li><Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/cookie-policy" className="hover:text-foreground transition-colors">Cookie Policy</Link></li>
+                <li><Link to="/disclaimer" className="hover:text-foreground transition-colors">Disclaimer</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-sm mb-4 text-foreground">Supporto</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li><a href="#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
-                <li><a href="mailto:info@vibescudo.it" className="hover:text-foreground transition-colors">Contatti</a></li>
+                <li><a href="mailto:vibescudo@gmail.com" className="hover:text-foreground transition-colors">Contatti</a></li>
               </ul>
             </div>
           </div>
