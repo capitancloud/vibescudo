@@ -20,8 +20,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <HeroSection scannerUrl={SCANNER_URL} />
       <EbookBanner />
+      <HeroSection scannerUrl={SCANNER_URL} />
       <SocialProof />
       <ResourcesSection />
       <ProblemSection />
