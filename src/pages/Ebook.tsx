@@ -77,6 +77,22 @@ const Ebook = () => {
           </div>
         </div>
 
+        {/* Scanner CTA top banner */}
+        <div className="px-4 pt-4 pb-0">
+          <div className="mx-auto max-w-6xl">
+            <Link
+              to="/"
+              className="group flex items-center justify-center gap-3 rounded-xl border border-warning/20 bg-warning/5 hover:bg-warning/10 px-5 py-3 transition-all"
+            >
+              <Zap className="h-4 w-4 text-warning shrink-0" />
+              <span className="text-sm text-muted-foreground">
+                <span className="text-foreground font-semibold">Scansiona la tua app in 30 secondi</span> — Solo €9,90 con VibeScudo
+              </span>
+              <ArrowRight className="h-4 w-4 text-warning shrink-0 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </div>
+
         {/* Hero */}
         <section className="px-4 pt-12 pb-20">
           <div className="mx-auto max-w-6xl">
