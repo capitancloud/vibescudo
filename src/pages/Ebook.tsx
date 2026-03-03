@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
-import { Shield, BookOpen, Download, CheckCircle2, Lock, Code2, Bug, AlertTriangle, Database, Globe, ArrowLeft, ArrowRight, Zap, FileText, Users, Star } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Shield, BookOpen, Download, CheckCircle2, Lock, Code2, Bug, AlertTriangle, Database, Globe, ArrowLeft, ArrowRight, Zap, FileText, Users, Star, Clock, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const chapters = [
   {
@@ -47,6 +48,13 @@ const benefits = [
 const EBOOK_DOWNLOAD_URL = "#"; // Placeholder — verrà aggiornato
 
 const Ebook = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleDownloadClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowModal(true);
+  };
+
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Background effects */}
@@ -123,13 +131,13 @@ const Ebook = () => {
                 </p>
 
                 {/* CTA */}
-                <a
-                  href={EBOOK_DOWNLOAD_URL}
-                  className="group inline-flex items-center gap-3 rounded-xl bg-gradient-red px-8 py-4 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red mb-4"
+                <button
+                  onClick={handleDownloadClick}
+                  className="group inline-flex items-center gap-3 rounded-xl bg-gradient-red px-8 py-4 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red mb-4 cursor-pointer"
                 >
                   <Download className="h-5 w-5 group-hover:animate-bounce" />
                   Scarica l'ebook gratuito
-                </a>
+                </button>
                 <p className="text-xs text-muted-foreground flex items-center gap-1.5">
                   <Lock className="h-3 w-3" />
                   PDF gratuito • Nessuna carta di credito • Download immediato
@@ -252,13 +260,13 @@ const Ebook = () => {
               </ul>
 
               <div className="text-center">
-                <a
-                  href={EBOOK_DOWNLOAD_URL}
-                  className="group inline-flex items-center gap-3 rounded-xl bg-gradient-red px-8 py-4 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red"
+                <button
+                  onClick={handleDownloadClick}
+                  className="group inline-flex items-center gap-3 rounded-xl bg-gradient-red px-8 py-4 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red cursor-pointer"
                 >
                   <Download className="h-5 w-5 group-hover:animate-bounce" />
                   Scarica ora — È gratuito
-                </a>
+                </button>
                 <p className="text-xs text-muted-foreground mt-3">
                   PDF di 100+ pagine • Download immediato • Nessun costo
                 </p>
@@ -383,6 +391,57 @@ const Ebook = () => {
           </div>
         </footer>
       </div>
+
+      {/* Coming soon modal */}
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+            onClick={() => setShowModal(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", duration: 0.4 }}
+              className="relative rounded-2xl border border-primary/20 bg-card p-8 sm:p-10 max-w-md w-full text-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <X className="h-5 w-5" />
+              </button>
+
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 mx-auto mb-5">
+                <Clock className="h-8 w-8 text-primary" />
+              </div>
+
+              <h3 className="font-display text-2xl font-bold mb-3">
+                Disponibile a <span className="text-gradient-red">breve!</span>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Stiamo ultimando gli ultimi dettagli del playbook. L'ebook sarà disponibile per il download 
+                <span className="text-foreground font-medium"> molto presto</span> — completamente gratuito.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Torna a visitare questa pagina per scaricarlo non appena sarà pronto! 🚀
+              </p>
+
+              <button
+                onClick={() => setShowModal(false)}
+                className="mt-6 inline-flex items-center gap-2 rounded-xl border border-border bg-muted/50 px-6 py-3 text-sm font-semibold text-foreground hover:bg-muted transition-colors cursor-pointer"
+              >
+                Ho capito, torno presto!
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
