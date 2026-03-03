@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, BookOpen, Download, CheckCircle2, Lock, Code2, Bug, AlertTriangle, Database, Globe, ArrowLeft, Zap, FileText, Users, Star } from "lucide-react";
+import { Shield, BookOpen, Download, CheckCircle2, Lock, Code2, Bug, AlertTriangle, Database, Globe, ArrowLeft, ArrowRight, Zap, FileText, Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const chapters = [
@@ -291,6 +291,57 @@ const Ebook = () => {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* CTA Scanner */}
+        <section className="px-4 py-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/3 to-transparent pointer-events-none" />
+          <div className="mx-auto max-w-4xl relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="rounded-3xl border border-warning/20 bg-card p-8 sm:p-12 text-center relative overflow-hidden"
+            >
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] rounded-full opacity-10 blur-[80px] bg-warning pointer-events-none" />
+              <div className="relative">
+                <span className="inline-flex items-center gap-2 rounded-full border border-warning/20 bg-warning/10 px-4 py-2 text-sm text-warning font-semibold mb-6">
+                  <Zap className="h-4 w-4" />
+                  Passa all'azione
+                </span>
+                <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+                  Hai letto la teoria?{" "}
+                  <span className="text-gradient-red">Ora testa la tua app.</span>
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+                  L'ebook ti insegna a riconoscere le vulnerabilità.{" "}
+                  <span className="text-foreground font-medium">VibeScudo le trova per te in 30 secondi</span>.
+                  21 controlli di sicurezza automatizzati sulla tua web app — senza installare nulla.
+                </p>
+                <div className="inline-flex items-center gap-3 rounded-xl border border-border bg-muted/50 px-6 py-3 mb-8">
+                  <span className="font-mono-bold text-3xl text-foreground">30<span className="text-primary text-xl">s</span></span>
+                  <div className="h-8 w-px bg-border" />
+                  <div className="text-left text-sm">
+                    <span className="font-semibold text-foreground block">Scansione completa</span>
+                    <span className="text-muted-foreground">Solo €9,90 • Due report PDF inclusi</span>
+                  </div>
+                </div>
+                <div>
+                  <Link
+                    to="/"
+                    className="group inline-flex items-center gap-3 rounded-xl bg-gradient-red px-8 py-4 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red"
+                  >
+                    <Shield className="h-5 w-5" />
+                    Scansiona la tua app — €9,90
+                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                  <p className="text-xs text-muted-foreground mt-3">
+                    Scansione non invasiva • Zero exploit • Risultati immediati
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
