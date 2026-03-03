@@ -1,6 +1,7 @@
-import { Shield, Zap, Menu, X } from "lucide-react";
+import { Shield, Zap, Menu, X, BookOpen } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import TopBar from "./TopBar";
 
 const SCANNER_URL = "https://scanner.vibescudo.it/";
@@ -39,6 +40,10 @@ const Navbar = () => {
             {navLinks.map((l) => (
               <a key={l.href} href={l.href} className="hover:text-foreground transition-colors">{l.label}</a>
             ))}
+            <Link to="/ebook" className="flex items-center gap-1.5 text-primary hover:text-primary/80 font-semibold transition-colors">
+              <BookOpen className="h-3.5 w-3.5" />
+              Ebook gratis
+            </Link>
           </div>
 
           <div className="flex items-center gap-3">
@@ -85,6 +90,14 @@ const Navbar = () => {
                     {l.label}
                   </a>
                 ))}
+                <Link
+                  to="/ebook"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 text-sm text-primary font-semibold py-2"
+                >
+                  <BookOpen className="h-4 w-4" />
+                  Ebook gratuito
+                </Link>
               </div>
             </motion.div>
           )}
