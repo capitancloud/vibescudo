@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import EbookBanner from "@/components/EbookBanner";
+import DeepScanBanner from "@/components/DeepScanBanner";
 import SocialProof from "@/components/SocialProof";
 import ProblemSection from "@/components/ProblemSection";
 import RiskSection from "@/components/RiskSection";
@@ -31,6 +32,7 @@ const Index = () => {
       <ReportSection scannerUrl={SCANNER_URL} />
       <TargetAudience />
       <PricingSection scannerUrl={SCANNER_URL} />
+      <DeepScanBanner />
       <FAQSection />
       <FinalCTA scannerUrl={SCANNER_URL} />
       <Footer scannerUrl={SCANNER_URL} />

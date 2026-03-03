@@ -1,4 +1,4 @@
-import { Shield, Zap, Menu, X, BookOpen } from "lucide-react";
+import { Shield, Zap, Menu, X, BookOpen, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -43,6 +43,10 @@ const Navbar = () => {
             <Link to="/ebook" className="flex items-center gap-1.5 text-primary hover:text-primary/80 font-semibold transition-colors">
               <BookOpen className="h-3.5 w-3.5" />
               Ebook gratis
+            </Link>
+            <Link to="/deep-scan" className="flex items-center gap-1.5 text-primary hover:text-primary/80 font-semibold transition-colors">
+              <Search className="h-3.5 w-3.5" />
+              Deep Scan
             </Link>
           </div>
 
@@ -97,6 +101,14 @@ const Navbar = () => {
                 >
                   <BookOpen className="h-4 w-4" />
                   Ebook gratuito
+                </Link>
+                <Link
+                  to="/deep-scan"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 text-sm text-primary font-semibold py-2"
+                >
+                  <Search className="h-4 w-4" />
+                  Deep Scan
                 </Link>
               </div>
             </motion.div>

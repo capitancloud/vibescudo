@@ -35,6 +35,7 @@ const Footer = ({ scannerUrl }: FooterProps) => {
                 <li><a href="#analisi" className="hover:text-foreground transition-colors">Cosa analizziamo</a></li>
                 <li><a href="#prezzo" className="hover:text-foreground transition-colors">Prezzo</a></li>
                 <li><Link to="/ebook" className="hover:text-foreground transition-colors text-primary font-medium">📘 Ebook gratuito</Link></li>
+                <li><Link to="/deep-scan" className="hover:text-foreground transition-colors text-primary font-medium">🔍 Deep Scan</Link></li>
               </ul>
             </div>
             <div>
