@@ -14,7 +14,7 @@ const vulnerabilities = [
 
 const differences = [
   { label: "Scansione Standard €9,90", points: ["21 controlli automatizzati", "Report PDF immediato", "Vulnerabilità note e comuni", "Risultato in 30 secondi", "Perfetta come primo check"], highlight: false },
-  { label: "Deep Scan — €299", points: ["Test manuali + automatizzati", "Simulazione attacco reale (pentest)", "Vulnerabilità critiche e zero-day", "Report dettagliato con remediation", "Follow-up e supporto dedicato"], highlight: true },
+  { label: "Deep Scan — €299", points: ["Test manuali + automatizzati", "Simulazione di attacco reale", "Vulnerabilità critiche e zero-day", "Report dettagliato con remediation", "Follow-up e supporto dedicato"], highlight: true },
 ];
 
 const DeepScan = () => {
@@ -83,7 +83,7 @@ const DeepScan = () => {
               >
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm text-primary font-semibold mb-6">
                   <Skull className="h-4 w-4" />
-                  Penetration Testing Avanzato
+                  Scansione Approfondita
                 </span>
 
                 <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
@@ -107,7 +107,7 @@ const DeepScan = () => {
                   </div>
                   <div className="h-10 w-px bg-border" />
                   <div className="text-left text-sm">
-                    <span className="text-foreground font-semibold block">Pentest completo</span>
+                    <span className="text-foreground font-semibold block">Scansione completa</span>
                     <span className="text-muted-foreground">Report + remediation inclusi</span>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ const DeepScan = () => {
                         Deep Security Scan
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                        Penetration test manuale + automatizzato sulla tua web app
+                        Scansione approfondita manuale + automatizzata sulla tua web app
                       </p>
                       <div className="space-y-2 text-xs text-muted-foreground border-t border-border pt-4">
                         <span className="flex items-center gap-2"><Target className="h-3 w-3 text-primary" /> Test manuali esperti</span>
