@@ -378,7 +378,7 @@ const Ebook = () => {
               </span>
             </div>
             <p className="text-xs text-muted-foreground">
-              © 2025 VibeScudo. Tutti i diritti riservati.
+              © 2026 VibeScudo. Tutti i diritti riservati.
             </p>
             <div className="flex gap-4 text-xs text-muted-foreground">
               <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy</Link>

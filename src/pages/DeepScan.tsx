@@ -416,7 +416,7 @@ const DeepScan = () => {
                 Vibe<span className="text-gradient-red">Scudo</span>
               </span>
             </div>
-            <p className="text-xs text-muted-foreground">© 2025 VibeScudo. Tutti i diritti riservati.</p>
+            <p className="text-xs text-muted-foreground">© 2026 VibeScudo. Tutti i diritti riservati.</p>
           </div>
         </footer>
       </div>
