@@ -453,16 +453,17 @@ const DeepScan = () => {
               <h3 className="font-display text-xl font-bold mb-2">
                 Calendario in arrivo!
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5">
                 Il sistema di prenotazione sarà attivato a <span className="text-foreground font-semibold">brevissimo</span>. 
                 Stiamo ultimando gli ultimi dettagli per offrirti la migliore esperienza possibile.
               </p>
-              <p className="text-sm text-muted-foreground mb-6">
-                Nel frattempo puoi contattarci a{" "}
-                <a href="mailto:vibescudo@gmail.com" className="text-primary font-semibold hover:underline">
+              <div className="rounded-xl border border-primary/20 bg-primary/5 px-5 py-4 mb-6">
+                <p className="text-sm text-foreground font-semibold mb-1">📩 Scrivici, ti rispondiamo subito!</p>
+                <p className="text-xs text-muted-foreground mb-2">Contattaci ora e riceverai una risposta entro poche ore.</p>
+                <a href="mailto:vibescudo@gmail.com" className="text-primary font-bold hover:underline text-sm">
                   vibescudo@gmail.com
                 </a>
-              </p>
+              </div>
 
               <button
                 onClick={() => setShowModal(false)}
