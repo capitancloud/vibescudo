@@ -99,6 +99,19 @@ const DeepScan = () => {
                   che richiedono analisi manuale esperta.
                 </p>
 
+                {/* Prezzo in evidenza */}
+                <div className="inline-flex items-center gap-4 rounded-2xl border border-primary/20 bg-card px-6 py-4 mb-6">
+                  <div>
+                    <span className="font-display text-4xl font-bold text-foreground">€299</span>
+                    <span className="text-muted-foreground text-sm ml-1">una tantum</span>
+                  </div>
+                  <div className="h-10 w-px bg-border" />
+                  <div className="text-left text-sm">
+                    <span className="text-foreground font-semibold block">Pentest completo</span>
+                    <span className="text-muted-foreground">Report + remediation inclusi</span>
+                  </div>
+                </div>
+
                 <p className="text-sm text-muted-foreground mb-8 border-l-2 border-primary/30 pl-4">
                   Per chi vuole portare la sicurezza della propria app al livello più alto. 
                   Un'analisi su misura, condotta da esperti, con report dettagliato e supporto alla remediation.
@@ -115,7 +128,7 @@ const DeepScan = () => {
                 </button>
                 <p className="text-xs text-muted-foreground flex items-center gap-1.5">
                   <Lock className="h-3 w-3" />
-                  €299 una tantum • Senza abbonamento • Report completo incluso
+                  Senza abbonamento • Pagamento sicuro • Supporto dedicato
                 </p>
               </motion.div>
 
