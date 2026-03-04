@@ -14,7 +14,7 @@ const vulnerabilities = [
 
 const differences = [
   { label: "Scansione Standard €9,90", points: ["21 controlli automatizzati", "Report PDF immediato", "Vulnerabilità note e comuni", "Risultato in 30 secondi", "Perfetta come primo check"], highlight: false },
-  { label: "Deep Scan — Consulenza", points: ["Test manuali + automatizzati", "Simulazione attacco reale (pentest)", "Vulnerabilità critiche e zero-day", "Report dettagliato con remediation", "Follow-up e supporto dedicato"], highlight: true },
+  { label: "Deep Scan — €299", points: ["Test manuali + automatizzati", "Simulazione attacco reale (pentest)", "Vulnerabilità critiche e zero-day", "Report dettagliato con remediation", "Follow-up e supporto dedicato"], highlight: true },
 ];
 
 const DeepScan = () => {
@@ -115,7 +115,7 @@ const DeepScan = () => {
                 </button>
                 <p className="text-xs text-muted-foreground flex items-center gap-1.5">
                   <Lock className="h-3 w-3" />
-                  Consulenza gratuita • Senza impegno • Preventivo personalizzato
+                  €299 una tantum • Senza abbonamento • Report completo incluso
                 </p>
               </motion.div>
 
@@ -343,8 +343,8 @@ const DeepScan = () => {
                   <span className="text-gradient-red">nella tua app?</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-                  Prenota una consulenza gratuita. Ti spiegheremo come funziona il Deep Scan, 
-                  cosa analizziamo e riceverai un <span className="text-foreground font-medium">preventivo personalizzato</span> senza impegno.
+                  Prenota una consulenza per il Deep Scan a <span className="text-foreground font-bold">€299</span>. Ti spiegheremo come funziona, 
+                  cosa analizziamo e come riceverai il <span className="text-foreground font-medium">report dettagliato con remediation</span>.
                 </p>
                 <button
                   onClick={handleBookClick}
