@@ -41,7 +41,7 @@ const benefits = [
   "Checklist di 30 controlli suddivisi in 6 categorie",
   "Pattern sicuri copia-incolla per ogni linguaggio",
   "Guide step-by-step per Firebase, Supabase e PostgreSQL",
-  "Aggiornato con le ultime minacce del 2025",
+  "Aggiornato con le ultime minacce del 2026",
 ];
 
 const EBOOK_DOWNLOAD_URL = "https://studenti.accademiadelcloud.it/p/vibe-coding-e-sicurezza-playbook-operativo";
@@ -183,7 +183,7 @@ const Ebook = () => {
             <span className="flex items-center gap-2"><FileText className="h-4 w-4 text-primary" /> 100+ pagine</span>
             <span className="flex items-center gap-2"><Bug className="h-4 w-4 text-primary" /> 21 vulnerabilità</span>
             <span className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> 30 controlli di sicurezza</span>
-            <span className="flex items-center gap-2"><Star className="h-4 w-4 text-primary" /> Aggiornato 2025</span>
+            <span className="flex items-center gap-2"><Star className="h-4 w-4 text-primary" /> Aggiornato 2026</span>
           </div>
         </section>
 
