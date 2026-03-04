@@ -30,12 +30,13 @@ const DeepScanSection = () => {
             Servizio Premium
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Deep Scan: la sicurezza che
-            <span className="text-gradient-red"> fa la differenza</span>
+            Vuoi andare ancora
+            <span className="text-gradient-red"> più in profondità?</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            La scansione automatica è un ottimo inizio, ma le vulnerabilità più pericolose richiedono un'analisi manuale avanzata. 
-            Con il Deep Scan simuliamo un <span className="text-foreground font-semibold">attacco reale</span> alla tua app.
+            La nostra scansione automatica copre già <span className="text-foreground font-semibold">21 controlli di sicurezza</span> ed è perfetta per individuare le vulnerabilità più comuni. 
+            Ma se la tua app gestisce dati sensibili o pagamenti, il <span className="text-foreground font-semibold">Deep Scan</span> aggiunge un livello extra: 
+            simuliamo un attacco reale per scovare ciò che i tool automatici non vedono.
           </p>
         </motion.div>
 
