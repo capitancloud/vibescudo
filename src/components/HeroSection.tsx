@@ -72,7 +72,7 @@ const HeroSection = ({ scannerUrl }: HeroProps) => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 rounded-2xl border border-border bg-card px-5 sm:px-8 py-4 sm:py-5"
         >
-          <span className="font-mono-bold text-4xl sm:text-5xl text-foreground">30<span className="text-primary text-2xl sm:text-3xl">s</span></span>
+          <span className="font-mono-bold text-4xl sm:text-5xl text-foreground">30<span className="text-primary text-2xl sm:text-3xl">sec</span></span>
           <div className="hidden sm:block h-10 w-px bg-border" />
           <div className="text-sm text-muted-foreground leading-snug text-center sm:text-left">
             <span className="font-semibold text-foreground text-base block">Per toglierti ogni dubbio</span>
