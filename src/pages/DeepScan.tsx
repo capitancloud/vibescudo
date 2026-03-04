@@ -123,12 +123,12 @@ const DeepScan = () => {
                   className="group inline-flex items-center gap-3 rounded-xl bg-gradient-red px-8 py-4 text-lg font-bold text-primary-foreground transition-all hover:opacity-90 glow-red mb-4 cursor-pointer"
                 >
                   <Calendar className="h-5 w-5" />
-                  Prenota una consulenza
+                  Prenota una consulenza gratuita
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </button>
                 <p className="text-xs text-muted-foreground flex items-center gap-1.5">
                   <Lock className="h-3 w-3" />
-                  Senza abbonamento • Pagamento sicuro • Supporto dedicato
+                  Consulenza gratuita e senza impegno • Paghi solo se decidi di procedere
                 </p>
               </motion.div>
 
@@ -356,8 +356,8 @@ const DeepScan = () => {
                   <span className="text-gradient-red">nella tua app?</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-                  Prenota una consulenza per il Deep Scan a <span className="text-foreground font-bold">€299</span>. Ti spiegheremo come funziona, 
-                  cosa analizziamo e come riceverai il <span className="text-foreground font-medium">report dettagliato con remediation</span>.
+                  La consulenza è <span className="text-foreground font-bold">completamente gratuita e senza impegno</span>. Serve solo per capire 
+                  le tue esigenze e spiegarti cosa analizziamo. Pagherai solo se decidi di procedere con il Deep Scan a <span className="text-foreground font-bold">€299</span>.
                 </p>
                 <button
                   onClick={handleBookClick}
@@ -368,7 +368,7 @@ const DeepScan = () => {
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </button>
                 <p className="text-xs text-muted-foreground mt-4">
-                  Nessun costo • Nessun impegno • Risposte in 24h
+                  Zero costi • Zero impegno • Paghi solo se vuoi procedere
                 </p>
               </div>
             </motion.div>
