@@ -14,7 +14,7 @@ const vulnerabilities = [
 
 const differences = [
   { label: "Scansione Standard €9,90", points: ["21 controlli automatizzati", "Report PDF immediato", "Vulnerabilità note e comuni", "Risultato in 30 secondi", "Perfetta come primo check"], highlight: false },
-  { label: "Deep Scan — €299", points: ["Test manuali + automatizzati", "Simulazione di attacco reale", "Vulnerabilità critiche e zero-day", "Report dettagliato con remediation", "Follow-up e supporto dedicato"], highlight: true },
+  { label: "Deep Scan — €197", points: ["Test manuali + automatizzati", "Simulazione di attacco reale", "Vulnerabilità critiche e zero-day", "Report dettagliato con remediation", "Follow-up e supporto dedicato"], highlight: true },
 ];
 
 const DeepScan = () => {
@@ -102,7 +102,7 @@ const DeepScan = () => {
                 {/* Prezzo in evidenza */}
                 <div className="inline-flex items-center gap-4 rounded-2xl border border-primary/20 bg-card px-6 py-4 mb-6">
                   <div>
-                    <span className="font-display text-4xl font-bold text-foreground">€299</span>
+                    <span className="font-display text-4xl font-bold text-foreground">€197</span>
                     <span className="text-muted-foreground text-sm ml-1">una tantum</span>
                   </div>
                   <div className="h-10 w-px bg-border" />
@@ -360,7 +360,7 @@ const DeepScan = () => {
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
                   La consulenza è <span className="text-foreground font-bold">completamente gratuita e senza impegno</span>. Serve solo per capire 
-                  le tue esigenze e spiegarti cosa analizziamo. Pagherai solo se decidi di procedere con il Deep Scan a <span className="text-foreground font-bold">€299</span>.
+                  le tue esigenze e spiegarti cosa analizziamo. Pagherai solo se decidi di procedere con il Deep Scan a <span className="text-foreground font-bold">€197</span>.
                 </p>
                 <button
                   onClick={handleBookClick}
