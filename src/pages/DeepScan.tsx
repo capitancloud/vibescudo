@@ -126,10 +126,13 @@ const DeepScan = () => {
                   Prenota una consulenza gratuita
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </button>
-                <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-                  <Lock className="h-3 w-3" />
-                  Consulenza gratuita e senza impegno • Paghi solo se decidi di procedere
-                </p>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mt-2 text-xs">
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-green-500/20 bg-green-500/10 px-3 py-1 text-green-400 font-medium">
+                    <CheckCircle2 className="h-3 w-3" />
+                    Consulenza gratuita e senza impegno
+                  </span>
+                  <span className="text-muted-foreground">Paghi solo se decidi di procedere</span>
+                </div>
               </motion.div>
 
               {/* Right — Visual */}
