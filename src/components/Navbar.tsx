@@ -44,7 +44,7 @@ const Navbar = () => {
               <BookOpen className="h-3.5 w-3.5" />
               Ebook gratis
             </Link>
-            <Link to="/deep-scan" className="inline-flex items-center gap-1.5 rounded-lg border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm font-bold text-primary hover:bg-primary/20 hover:border-primary/60 hover:shadow-[0_0_12px_hsl(0_72%_51%/0.3)] transition-all duration-300">
+            <Link to="/deep-scan" className="inline-flex items-center gap-1.5 rounded-lg border border-primary/40 bg-primary/10 px-3 py-1.5 text-sm font-bold text-primary hover:bg-primary/20 hover:border-primary/60 shadow-[0_0_8px_hsl(0_72%_51%/0.2)] hover:shadow-[0_0_16px_hsl(0_72%_51%/0.4)] animate-[pulse_3s_ease-in-out_infinite] transition-all duration-300">
               <Search className="h-3.5 w-3.5" />
               Deep Scan
             </Link>
