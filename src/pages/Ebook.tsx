@@ -341,7 +341,7 @@ const Ebook = () => {
                   21 controlli di sicurezza automatizzati sulla tua web app — senza installare nulla.
                 </p>
                 <div className="inline-flex items-center gap-3 rounded-xl border border-border bg-muted/50 px-6 py-3 mb-8">
-                  <span className="font-mono-bold text-3xl text-foreground">30<span className="text-primary text-xl">s</span></span>
+                  <span className="font-mono-bold text-3xl text-foreground">30<span className="text-primary text-xl">sec</span></span>
                   <div className="h-8 w-px bg-border" />
                   <div className="text-left text-sm">
                     <span className="font-semibold text-foreground block">Scansione completa</span>
