@@ -85,7 +85,7 @@ const RiskSection = () => {
           </span>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
             "Tanto a me <span className="text-gradient-red">non succederà mai</span>"<br />
-            <span className="text-muted-foreground text-2xl sm:text-3xl md:text-4xl font-medium">— Famose ultime parole.</span>
+            <span className="text-muted-foreground text-2xl sm:text-3xl md:text-4xl font-medium">— Ultime parole famose.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Pensi che gli hacker attacchino solo le grandi aziende? <span className="text-foreground font-medium">Sbagliato.</span>{" "}

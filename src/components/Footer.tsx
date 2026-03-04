@@ -59,7 +59,7 @@ const Footer = ({ scannerUrl }: FooterProps) => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © 2025 VibeScudo. Tutti i diritti riservati.
+            © 2026 VibeScudo. Tutti i diritti riservati.
           </p>
           <p className="text-xs text-muted-foreground">
             Made with 🛡️ in Italia
